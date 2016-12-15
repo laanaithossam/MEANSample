@@ -1,0 +1,9 @@
+node_modules
+typings
+.vscode
+Server/**/*.js
+Mobile/**/*.js
+Client/**/*.js
+Server/**/*.map
+Mobile/**/*.map
+Client/**/*.map

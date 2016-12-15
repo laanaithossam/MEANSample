@@ -1,0 +1,30 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "Demo Node/Express",
+  "scripts": {
+    "postinstall": "typings install",
+    "typings": "typings",
+    "start": "npm run build && nodemon ./app.js",
+    "start:d": "concurrently \"npm run tsc:w\" \"npm run debug\" ",
+    "debug": "npm run build && nodemon --debug ./app.js",
+    "build": "npm run tsc",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "author": "Hossam",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.0.0",
+    "express": "^4.14.0",
+    "inversify": "^3.0.0-beta.1",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.6.5",
+    "reflect-metadata": "^0.1.8",
+    "routing-controllers": "^0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^3.0.0",
+    "rxjs": "^5.0.0-rc.4"
+  }
+}

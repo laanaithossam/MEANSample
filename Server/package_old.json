@@ -1,0 +1,26 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "Demo Node/Express",
+  "scripts": {
+    "postinstall": "typings install",
+    "typings": "typings",
+    "start": "npm run build && nodemon ./app.js",
+    "build" :"npm run cleanDeps && npm run copyDeps && npm run tsc",
+    "copyDeps" : "xcopy \"..\\Core\\*.ts\" \".\\src\\References\\Core\\*\" /s /e",
+    "cleanDeps":"rd .\\src\\References /s /q",
+    "tsc" :"tsc",
+    "tsc:w": "tsc -w"
+  },
+  "author": "Hossam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.6.5",
+    "concurrently": "^3.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.0.0"
+  }
+}
