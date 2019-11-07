@@ -19,7 +19,7 @@
     "express": "^4.14.0",
     "inversify": "^3.0.0-beta.1",
     "mongodb": "^2.2.11",
-    "mongoose": "^4.6.5",
+    "mongoose": "^5.7.8",
     "reflect-metadata": "^0.1.8",
     "routing-controllers": "^0.6.6"
   },
